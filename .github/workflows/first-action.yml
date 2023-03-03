@@ -2,19 +2,15 @@ name: First Workflow
 
 # event(s) that trigger the workflow
 # workflow_dispatch means manually trigger
-on: workflow_dispatch 
+on: workflow_dispatch
 
-jobs: 
-  first-job: 
+jobs:
+  first-job:
     # environment steps should be executed (runner)
     runs-on: ubuntu-latest
-    steps: 
-      - name: Print greenting
+    steps:
+      - name: Print greeting
         # command that will be executed in the command line
         run: echo "Hello World"
       - name: Print goodbye
         run: echo "Bye"
-        
-    
-
-
